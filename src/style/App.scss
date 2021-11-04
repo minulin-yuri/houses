@@ -1,0 +1,50 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  background: $background_color;
+  padding: 50px 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  padding: 30px;
+}
+
+h2, h3 {
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {  
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+  color: $blue;  
+}
+
+h3 {
+  font-size: 1rem;
+  color: white;
+}
+

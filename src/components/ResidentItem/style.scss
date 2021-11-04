@@ -1,0 +1,33 @@
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    font-size: 0.8rem;
+
+    &__contacts {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin: 0 0 10px;
+    }
+
+    &__data {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 5px;
+    }
+    
+    &__actions {
+        .MuiSvgIcon-root {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
