@@ -4,6 +4,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { streetsReducer } from "./streets/reducer";
 import { housesReducer } from "./houses/reducer";
+import { flatsReducer } from "./flats/reducer";
 
 const middlewares = [thunk];
 
@@ -18,6 +19,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
     streets: streetsReducer,
     houses: housesReducer,
+    flats: flatsReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

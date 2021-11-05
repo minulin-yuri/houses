@@ -20,7 +20,9 @@ export const getStreets = (url) => async (dispatch) => {
     dispatch(getStreetsPending());
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            method: 'GET',
+        });
 
         if (!response.ok) {
             throw new Error(`error ${response.status}`);

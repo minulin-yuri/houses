@@ -20,7 +20,9 @@ export const getHouses = (url) => async (dispatch) => {
     dispatch(getHousesPending());
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            method: 'GET',
+        });
 
         if (!response.ok) {
             throw new Error(`error ${response.status}`);
